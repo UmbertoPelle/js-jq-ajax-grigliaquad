@@ -5,8 +5,7 @@ function randomNumInside() {
 
   svuota.click(function () {
     cell = 0;
-    $(".square").text("");
-    $(".square").css("background-color","")
+    $(".square").text("").css("background-color","");
   });
 
   randomNum.click(function () {
