@@ -30,10 +30,10 @@ body{
   text-align: center;
 }
 
-.yellow{
-  background: yellow;
+#container .square.yellow{
+  background-color: yellow;
 };
 
-.green{
-  background-color: #4caf50;
+#container .square.green{
+  background-color: green;
 };

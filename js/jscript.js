@@ -15,13 +15,13 @@ function randomNumInside() {
 
           if (number <= 5) {
             var posizione = "#" + cell;
+            $(posizione).addClass("yellow");
             $(posizione).append(number);
-            $(posizione).addClass("yellow")
             cell++;
           } else if (number >= 5){
             var posizione = "#" + cell;
+            $(posizione).addClass("green");
             $(posizione).append(number);
-            $(posizione).addClass("green")
             cell++;
           }
 
