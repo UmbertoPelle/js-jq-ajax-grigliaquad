@@ -1,8 +1,15 @@
 function randomNumInside() {
   var randomNum = $("#randomNum");
+  var svuota = $("#svuota");
   var cell = 0;
 
-  randomNum.click(function functionName() {
+  svuota.click(function () {
+    cell = 0;
+    $(".square").text("");
+    $(".square").css("background-color","")
+  });
+
+  randomNum.click(function () {
 
     if (cell <=35) {
       $.ajax({
@@ -15,12 +22,14 @@ function randomNumInside() {
 
           if (number <= 5) {
             var posizione = "#" + cell;
-            $(posizione).addClass("yellow");
+            // $(posizione).addClass("yellow");
+            $(posizione).css("background-color","yellow");
             $(posizione).append(number);
             cell++;
-          } else if (number >= 5){
+          } else {
             var posizione = "#" + cell;
-            $(posizione).addClass("green");
+            // $(posizione).addClass("green");
+            $(posizione).css("background-color","green");
             $(posizione).append(number);
             cell++;
           }
